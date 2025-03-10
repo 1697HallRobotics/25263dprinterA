@@ -53,6 +53,14 @@
 // using namespace pros::literals;
 // using namespace okapi;
 
+pros::Controller driver(CONTROLLER_MASTER);
+pros::Motor RightFront(-6);
+pros::Motor LeftFront(-12);
+pros::Motor RightBack(-4);
+pros::Motor LeftBack(-11);
+float deadzone=10.1f;
+
+
 /**
  * Prototypes for the competition control tasks are redefined here to ensure
  * that they can be called from user code (i.e. calling autonomous from a
